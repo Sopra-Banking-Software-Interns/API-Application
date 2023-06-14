@@ -38,6 +38,6 @@ pur=$(curl --request POST \
 	--data q="Hello" \
 	--data target="$linew" \
 	--data source=en)
-echo $pur | jq -r '. | .data.translations[0].translatedText' >> langoutput.txt 
+echo $pur | jq -r '. | .data.translations[0].translatedText'
 done
 rm message.txt
