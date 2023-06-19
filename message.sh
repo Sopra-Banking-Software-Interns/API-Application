@@ -28,6 +28,11 @@ echo -n "">langoutput.txt
 for (( x=1; x<=$linenumber; x++ ))
 do
 linew=$(sed -n "${x}p" message.txt)
+if [[ $linew == "en" ]]
+then
+echo "Hello"
+continue;
+fi
 pur=$(curl --request POST \
 	--url https://google-translate1.p.rapidapi.com/language/translate/v2 \
 	--compressed \
