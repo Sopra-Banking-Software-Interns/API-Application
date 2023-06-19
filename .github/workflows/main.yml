@@ -1,3 +1,6 @@
+env:
+  Rapid_key: ${{ secrets.Rapid_key }}
+ 
 name: create-map
 on: push
 jobs:
