@@ -33,7 +33,7 @@ pur=$(curl --request POST \
 	--compressed \
 	--header 'Accept-Encoding: application/gzip' \
 	--header 'X-RapidAPI-Host: google-translate1.p.rapidapi.com' \
-	--header 'X-RapidAPI-Key: ${{ secrets.RAPID_KEY}}' \
+	--header 'X-RapidAPI-Key: $Rapid_key' \
 	--header 'content-type: application/x-www-form-urlencoded' \
 	--data q="Hello" \
 	--data target="$linew" \
