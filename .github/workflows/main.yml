@@ -1,5 +1,5 @@
 env:
-  Rapid_key: ${{ secrets.Rapid_key }}
+  Rapid_key: ${{ secrets.RAPID_KEY }}
  
 name: create-map
 on: push
