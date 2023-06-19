@@ -6,8 +6,8 @@ linenumber=$(sed -n '$=' lang.txt)
 for (( x=1; x<=$linenumber; x++ ))
 do
 linew=$(sed -n "${x}p" lang.txt)
-echo $linew
-echo $x
+# echo $linew
+# echo $x
 # r="$line"
 # echo $r
 curr=$("awk" -F'\t' -v lang="$linew" '$3==lang {print $2; exit}' "$iso_file")
@@ -22,9 +22,9 @@ done < lang.txt
 
 
 linenumber=$(sed -n '$=' message.txt)
-echo $linenumber
+# echo $linenumber
 TEXT="HELLO"
-echo -n "">langoutput.txt
+ echo -n "">langoutput.txt
 for (( x=1; x<=$linenumber; x++ ))
 do
 linew=$(sed -n "${x}p" message.txt)
